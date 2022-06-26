@@ -49,13 +49,13 @@ end
 
 我们可以通过将所有指标两两进行比较，并给定如下图所示的重要性判断：
 
-![](C:\Users\gaosensen\Desktop\新建文件夹\判断矩阵.jpg)
+![avatar](https://github.com/YottabyteM/Stack-Overflow/blob/main/img/AHP/%E5%88%A4%E6%96%AD%E7%9F%A9%E9%98%B5.jpg)
 
 ### 一致矩阵
 
 定义见下图：
 
-![](C:\Users\gaosensen\Desktop\新建文件夹\一致矩阵.jpg)
+![avatar](https://github.com/YottabyteM/Stack-Overflow/blob/main/img/AHP/%E4%B8%80%E8%87%B4%E7%9F%A9%E9%98%B5.jpg)
 
 ### 一致性检验
 
@@ -76,9 +76,7 @@ plot(a,b)
 ```
 
 ### 一致性检验的一般步骤
-
-![](C:\Users\gaosensen\Desktop\新建文件夹\一致性检验的一般步骤.jpg)
-
+![avatar](https://github.com/YottabyteM/Stack-Overflow/blob/main/img/AHP/%E4%B8%80%E8%87%B4%E7%9F%A9%E9%98%B5.jpg)
 上述一致性检验的matlab代码实现：
 
 ```matlab
@@ -169,12 +167,13 @@ disp( V(:,c) ./ sum(V(:,c)) )
 ```
 
 ### 层次分析法的一些局限性
+![avatar](https://github.com/YottabyteM/Stack-Overflow/blob/main/img/AHP/%E5%B1%82%E6%AC%A1%E5%88%86%E6%9E%90%E6%B3%95%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B1%80%E9%99%90%E6%80%A7.jpg)
 
-![](C:\Users\gaosensen\Desktop\新建文件夹\层次分析法的一些局限性.jpg)
 
 ### 拓展：多层次层次分析法模型
 
-![](C:\Users\gaosensen\Desktop\新建文件夹\多层次层次分析模型.jpg)
+![avatar](https://github.com/YottabyteM/Stack-Overflow/blob/main/img/AHP/%E5%A4%9A%E5%B1%82%E6%AC%A1%E5%B1%82%E6%AC%A1%E5%88%86%E6%9E%90%E6%A8%A1%E5%9E%8B.jpg)
+
 
 ### 课后习题
 
