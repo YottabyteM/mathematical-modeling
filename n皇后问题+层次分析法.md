@@ -76,7 +76,7 @@ plot(a,b)
 ```
 
 ### 一致性检验的一般步骤
-![avatar](https://github.com/YottabyteM/Stack-Overflow/blob/main/img/AHP/%E4%B8%80%E8%87%B4%E7%9F%A9%E9%98%B5.jpg)
+![avatar](https://github.com/YottabyteM/Stack-Overflow/blob/main/img/AHP/%E4%B8%80%E8%87%B4%E6%80%A7%E6%A3%80%E9%AA%8C%E7%9A%84%E4%B8%80%E8%88%AC%E6%AD%A5%E9%AA%A4.jpg))
 上述一致性检验的matlab代码实现：
 
 ```matlab
