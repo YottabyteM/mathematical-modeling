@@ -1,39 +1,52 @@
 ## 关于n皇后问题在matlab中的实现
 
+nqueen_recusion.m
 ```matlab
-clear all;
-clc;
-n=input('皇后的个数为：');
-res=0;%表示总的方案数
-X=zeros(1,100);%长度为100的一维数组，存储每一行皇后的列坐标，我们在这里假设问题规模不超过100
-t=1;%开始放置第一行的皇后
-while t>0
-    X(t)=X(t)+1;
-    while X(t)<=n
-        isConflict=0;%0表示不发生冲突
-        for i=1:t-1%遍历之前的所有行
-            if abs(t-i)==abs(X(t)-X(i))||X(t)==X(i)%如果出现矛盾
-                X(t)=X(t)+1;
-                isConflict=1;
-                break;%跳出for循环
-            end
+global n;
+n = input('请输入n皇后中n的取值');
+global g;%global声明的变量
+global col;
+global dg;
+global udg;
+global solunum;
+solunum = 0;
+g = zeros(0, n);
+col = zeros(1, n);
+dg = zeros(1, 3 * n);%在实际操作中，第一个维度只需要3
+udg = zeros(1, 3 * n);
+dfs(1);
+```
+
+dfs.m
+```matlab
+function dfs(u)
+global n;
+global g;
+global col;
+global solunum;
+global dg;
+global udg;
+if u > n
+    disp(g);
+    solunum = solunum + 1;
+else
+    for i = 1 : n
+        if col(i) == 0 && dg(u + i) == 0 && udg(n + u - i) == 0
+            g(i, u) = 1;
+            col(i) = 1;
+            dg(u + i) = 1;
+            udg(n + u - i) = 1;
+            dfs(u + 1);
+            col(i) = 0;
+            dg(u + i) = 0;
+            udg(n + u - i) = 0;
+            g(i, u) = 0;
         end
-        if isConflict==0%未发生冲突，跳出循环
-            break;
-        end
-    end
-    if X(t)<=n
-        if t==n
-            res=res+1;
-        else
-            t=t+1;
-            X(t)=0;%0表示未放置
-        end
-    else
-        t=t-1;
     end
 end
+end
 ```
+
 
 ## 层次分析法模型
 
