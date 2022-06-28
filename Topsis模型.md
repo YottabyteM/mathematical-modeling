@@ -4,7 +4,7 @@
 
 ### 第一步：将原始矩阵正向化
 
-<img src="S1.png" style="zoom:67%;" />
+<img src="img/AHP/S1.png" style="zoom:67%;" />
 
 将所有的指标类型全部转化为极大型指标
 
