@@ -4,7 +4,7 @@
 
 ### 第一步：将原始矩阵正向化
 
-<img src="S1.png" style="zoom:67%;" />
+<img src="img/AHP/S1.png" style="zoom:67%;" />
 
 将所有的指标类型全部转化为极大型指标
 
@@ -58,7 +58,7 @@ Z = X ./ repmat(sum(X.*X) .^ 0.5, n, 1);
 
 ### 第三步：计算得分并归一化
 
-<img src="S2.png" style="zoom:80%;" />
+<img src="img/AHP/S2.png" style="zoom:80%;" />
 $$
 定义最大值Z_{i}^{+}为第i列的最大值 \\
 定义最小值Z_{i}^{-}为第i列的最小值 \\
