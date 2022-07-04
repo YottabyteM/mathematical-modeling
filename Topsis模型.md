@@ -36,8 +36,8 @@ posit_x = 1 - abs(x-best) / M;
 $$
 M = max\{a - min\{x_{i}\}, max\{x_i\} - b\}, x_{i} = \left\{ 
     \begin{array}{lc}
-        1 - \frac{x_{i}-b}{M}&x_{i} < a \\
-        1&a\leq x_{i} \leq b \\
+        1 - \frac{x_{i}-b}{M}&x_{i} < a  
+        1&a\leq x_{i} \leq b  
         1 - \frac{a - x_{i}}{M}&b < x_i
     \end{array}
 \right.
